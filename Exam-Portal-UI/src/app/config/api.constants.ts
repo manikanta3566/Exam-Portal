@@ -8,5 +8,8 @@ export const API_ENDPOINTS = {
     GET_BY_ID: (id: string | number) => `${BASE_URL}/users/${id}`,
     UPDATE: (id: string | number) => `${BASE_URL}/users/${id}`,
     DELETE: (id: string | number) => `${BASE_URL}/users/${id}`,
+  },
+  AUTH:{
+    LOGIN:`${BASE_URL}/auth/login`
   }
 };

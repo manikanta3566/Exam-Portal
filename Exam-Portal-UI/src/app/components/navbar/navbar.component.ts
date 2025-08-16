@@ -4,6 +4,7 @@ import {MatToolbar, MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButton, MatButtonModule, MatIconButton} from '@angular/material/button';
 import { Router, RouterLink } from '@angular/router';
+import { LoginService } from '../../services/login.service';
 
 @Component({
   selector: 'app-navbar',
@@ -12,5 +13,13 @@ import { Router, RouterLink } from '@angular/router';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  constructor(public loginService:LoginService,private router:Router){
+
+  }
+
+  logout(){
+    this.loginService.logout();
+    this.router.navigate(['login']);
+  }
 
 }
