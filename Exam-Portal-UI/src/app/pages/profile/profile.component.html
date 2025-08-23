@@ -1,0 +1,44 @@
+<mat-card>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-10 offset-1">
+        <div class="container text-center mt-5">
+          <img src="/profile.jpg" alt="" class="user-profile" />
+          <h1 class="mt-2">{{user.firstName}} {{user.lastName}}</h1>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 offset-3">
+              <mat-divider></mat-divider>
+
+              <mat-grid-list cols="2" rowHeight="35px" gutterSize="15px">
+                <mat-grid-tile><strong>Email:</strong></mat-grid-tile>
+                <mat-grid-tile>{{user.email}}</mat-grid-tile>
+
+                <mat-grid-tile><strong>Firstname:</strong></mat-grid-tile>
+                <mat-grid-tile>{{user.firstName}}</mat-grid-tile>
+
+                <mat-grid-tile><strong>Lastname:</strong></mat-grid-tile>
+                <mat-grid-tile>{{user.lastName}}</mat-grid-tile>
+
+                <mat-grid-tile><strong>Fullname:</strong></mat-grid-tile>
+                <mat-grid-tile>{{user.firstName}} {{user.lastName}}</mat-grid-tile>
+
+                <mat-grid-tile><strong>Phone:</strong></mat-grid-tile>
+                <mat-grid-tile>{{user.phone}}</mat-grid-tile>
+
+                <mat-grid-tile><strong>Status:</strong></mat-grid-tile>
+                <mat-grid-tile>{{user.active ? 'ACTIVE':'INACTIVE'}}</mat-grid-tile>
+              </mat-grid-list>
+
+              <div class="my-4 text-center">
+               <button type="button" mat-raised-button color="primary"  >Update</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-card>

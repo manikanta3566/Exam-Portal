@@ -11,7 +11,7 @@
   <span class="example-spacer"></span>
   @if (loginService.isUserLoggedIn()) {
       <span style="font-size: 15px; margin-right: 14px;">
-    {{ loginService.getUserDataFromLocalStorage().firstName +' '+ loginService.getUserDataFromLocalStorage().lastName  }}
+    {{ (loginService.getUserDataFromLocalStorage().firstName + ' ' + loginService.getUserDataFromLocalStorage().lastName) | uppercase }}
   </span>
   <button (click)="logout()" mat-button>Logout</button>
 

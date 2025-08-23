@@ -16,8 +16,7 @@ import { Router } from "@angular/router";
     MatInputModule,
     MatButtonModule,
     ɵInternalFormsSharedModule,
-    FormsModule,
-    JsonPipe,
+    FormsModule
   ],
   templateUrl: "./login.component.html",
   styleUrl: "./login.component.css",
@@ -37,7 +36,7 @@ export class LoginComponent {
         console.log(data);
         this.loginService.storeUserDataToLocalStorage(data);
         if (this.loginService.getUserRole() == "ADMIN") {
-          this.router.navigate(["admin-dashboard"]);
+          this.router.navigate(["admin-dashboard/profile"]);
         } else if (this.loginService.getUserRole() == "USER") {
           this.router.navigate(["user-dashboard"]);
         }else{

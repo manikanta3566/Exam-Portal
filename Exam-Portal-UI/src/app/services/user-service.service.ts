@@ -12,4 +12,8 @@ export class UserServiceService {
   addUser(user: any) : Observable<any> {
     return this.http.post(API_ENDPOINTS.USERS.CREATE, user);
   }
+
+  getUser(id:string):Observable<any>{
+    return this.http.get(API_ENDPOINTS.USERS.GET_BY_ID(id));
+  }
 }
