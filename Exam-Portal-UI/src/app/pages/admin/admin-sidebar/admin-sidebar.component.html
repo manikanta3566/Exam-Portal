@@ -1,18 +1,23 @@
 <mat-card>
-  <div style="margin: 11px 0px -10px 22px">
-    <mat-card-title><span>Menu</span></mat-card-title>
+  <div>
+    <mat-card-title class="menu">Menu</mat-card-title>
   </div>
 
   <mat-card-actions>
-    <mat-list role="list">
+    <mat-list style="width: 100%" role="list">
       <!-- <mat-list-item role="listitem"
         ><button mat-button routerLink="/admin-dashboard">
           <mat-icon>home</mat-icon>Home
         </button></mat-list-item
       > -->
       <mat-list-item role="listitem"
-        ><button mat-button routerLink="/admin-dashboard/profile">
-          <mat-icon>account_circle</mat-icon>Profile
+        ><button
+          style="font-size: 20px; width: 100%"
+          mat-button
+          routerLink="/admin-dashboard/profile"
+        >
+          <span class="menu-icon"><mat-icon>account_circle</mat-icon></span
+          >Profile
         </button></mat-list-item
       >
     </mat-list>

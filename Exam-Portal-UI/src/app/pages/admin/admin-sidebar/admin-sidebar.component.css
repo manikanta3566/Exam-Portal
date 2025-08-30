@@ -1,0 +1,13 @@
+.menu {
+  padding: 10px 10px;
+  position: relative;
+  left: 10px;
+  top: 6px;
+  font-size: 23px;
+}
+
+.menu-icon {
+  position: relative;
+  top: 4px;
+  margin-right: 10px;
+}
