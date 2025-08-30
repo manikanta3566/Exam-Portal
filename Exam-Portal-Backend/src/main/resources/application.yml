@@ -14,5 +14,8 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
 
+client:
+    url: http://localhost:3000
+
 
 
